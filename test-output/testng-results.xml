@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11034" started-at="2018-10-16T09:36:24Z" finished-at="2018-10-16T09:36:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11034" started-at="2018-10-16T09:36:24Z" finished-at="2018-10-16T09:36:35Z">
+      <class name="restAPIAutomation.RestAPI.TestBase">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:restAPIAutomation.RestAPI.TestBase@5c3bd550]" name="startTest" is-config="true" duration-ms="258" started-at="2018-10-16T15:06:24Z" finished-at="2018-10-16T15:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="apiMethod(java.lang.String)[pri:0, instance:restAPIAutomation.RestAPI.TestBase@5c3bd550]" name="apiMethod" duration-ms="5624" started-at="2018-10-16T15:06:25Z" data-provider="dataProviderS" finished-at="2018-10-16T15:06:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChargeUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiMethod -->
+        <test-method status="PASS" signature="apiMethod(java.lang.String)[pri:0, instance:restAPIAutomation.RestAPI.TestBase@5c3bd550]" name="apiMethod" duration-ms="2777" started-at="2018-10-16T15:06:31Z" data-provider="dataProviderS" finished-at="2018-10-16T15:06:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Activate]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiMethod -->
+        <test-method status="PASS" signature="apiMethod(java.lang.String)[pri:0, instance:restAPIAutomation.RestAPI.TestBase@5c3bd550]" name="apiMethod" duration-ms="691" started-at="2018-10-16T15:06:34Z" data-provider="dataProviderS" finished-at="2018-10-16T15:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[getsubscriberprofile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:restAPIAutomation.RestAPI.TestBase@5c3bd550]" name="tearDown" is-config="true" duration-ms="845" started-at="2018-10-16T15:06:35Z" finished-at="2018-10-16T15:06:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- restAPIAutomation.RestAPI.TestBase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
