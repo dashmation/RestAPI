@@ -31,13 +31,13 @@ public class ExcelActions {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		int index=0;
+
+		int index = 0;
 		for (int m = 0; m < wb.getNumberOfSheets(); m++) {
-	           if (wb.getSheetName(m).equals(sheetName)) {
-	        	  index = wb.getSheetIndex(sheetName);
-	    }
-	}
+			if (wb.getSheetName(m).equals(sheetName)) {
+				index = wb.getSheetIndex(sheetName);
+			}
+		}
 		sheet = wb.getSheetAt(index);
 	}
 
@@ -54,7 +54,7 @@ public class ExcelActions {
 		jsonObject = new JSONObject();
 		MjsonObject = new JSONObject();
 		formatter = new DataFormatter();
-		
+
 		try {
 			for (int iRowIndex = 3; iRowIndex <= sheet.getLastRowNum(); iRowIndex++) {
 				superKeyCellValue = formatter.formatCellValue(sheet.getRow(iRowIndex).getCell(MassterkeyColndex));
@@ -78,12 +78,12 @@ public class ExcelActions {
 				MjsonObject.put(exSuperKeyCellValue, jsonObject);
 			}
 			wb.close();
-			//System.out.println("before returning JSON string value is : " + MjsonObject.toString());
-		} catch (JSONException |
-
-				IOException ex) {
+			// System.out.println("before returning JSON string value is : " +
+			// MjsonObject.toString());
+		} catch (JSONException | IOException ex) {
 			ex.printStackTrace();
-			//System.out.println("Exception while preparing JSON object : " + ex.getMessage());
+			// System.out.println("Exception while preparing JSON object : " +
+			// ex.getMessage());
 			return "";
 		}
 		return MjsonObject.toString();
@@ -99,24 +99,23 @@ public class ExcelActions {
 		return r.getLastCellNum();
 
 	}
-	
+
 	public int sheetIndex(String sheetName) {
-		int index=0;
+		int index = 0;
 		for (int m = 0; m < wb.getNumberOfSheets(); m++) {
-	           if (wb.getSheetName(m).equals(sheetName)) {
-	        	  index = wb.getSheetIndex(sheetName);
-	    }
-	}
+			if (wb.getSheetName(m).equals(sheetName)) {
+				index = wb.getSheetIndex(sheetName);
+			}
+		}
 		return index;
 	}
-	
-	
+
 	public String makingJSONWithResponse(int MassterkeyColndex, int keyColIndex, int valColIndex) {
 		String exSuperKeyCellValue = null;
 		jsonObject = new JSONObject();
 		MjsonObject = new JSONObject();
 		formatter = new DataFormatter();
-		
+
 		try {
 			for (int iRowIndex = 3; iRowIndex <= sheet.getLastRowNum(); iRowIndex++) {
 				superKeyCellValue = formatter.formatCellValue(sheet.getRow(iRowIndex).getCell(MassterkeyColndex));
@@ -140,12 +139,14 @@ public class ExcelActions {
 				MjsonObject.put(exSuperKeyCellValue, jsonObject);
 			}
 			wb.close();
-			//System.out.println("before returning JSON string value is : " + MjsonObject.toString());
+			// System.out.println("before returning JSON string value is : " +
+			// MjsonObject.toString());
 		} catch (JSONException |
 
 				IOException ex) {
 			ex.printStackTrace();
-			//System.out.println("Exception while preparing JSON object : " + ex.getMessage());
+			// System.out.println("Exception while preparing JSON object : " +
+			// ex.getMessage());
 			return "";
 		}
 		return MjsonObject.toString();
